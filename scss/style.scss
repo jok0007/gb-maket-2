@@ -1,15 +1,46 @@
  @import "style0.scss";
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Raleway:wght@400;500;600;700;800&display=swap');
+ @mixin button-style {
+    font-family: Raleway;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 170px;
+    height: 53px;
+    background-color: #998675;
+    box-shadow: inset 0px -3px 0px 0px #736357;
+    border-radius: 3px;
+ }
+ @mixin button-hover {
+    color: #998675;
+    background-color: #ffffff;
+ }
+ @mixin button-active {
+    color: #ffffff;
+    background-color: #998675;
+ }
+ @mixin montserrat ($fz, $lh, $fw) {
+    font-family: Montserrat;
+    font-size: $fz+px;
+    line-height: $lh;
+    font-weight: $fw;
+    color: #ffffff;
+ }
+ @mixin raleway($fz, $lh, $fw) {
+    font-family: Raleway;
+    font-size: $fz+px;
+    line-height: $lh;
+    font-weight: $fw;
+    color: #ffffff;    
+ }
+
  $hover-color:#c7b299;
+ $active-color:hsl(35, 46%, 47%);
  $trans: all .25s ease 0s;
  $media998: 998px;
-
-
-
-
- body {
-     font-family: Montserrat;
- }
 
 .container {
      max-width: 1242px;
@@ -30,6 +61,7 @@
     padding: 40px 16px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
         &__top {
             width: 100%;
@@ -55,12 +87,15 @@
                 color: $hover-color;
             } 
         }
+        &__logo:active{
+            color: $active-color;
+        }
         
         &__logo-svg {
             fill: currentColor;
         }
                 
-        &__logo-text {
+        &__logo-text {        
         font-family: Raleway;
         font-size: 34px;
         line-height: 1.2;
@@ -83,12 +118,8 @@
             margin: 0;
         } 
         
-        &__menu-item {            
-            font-family: Montserrat;
-            font-size: 14px;
-            line-height: 1.2;
-            font-weight: 300;
-            color: #ffffff;
+        &__menu-item {
+            @include montserrat (14, 1.2, 300);            
             transition: $trans;
         }
         
@@ -96,6 +127,9 @@
             &__menu-item:hover{
                 color: $hover-color;
             } 
+        }
+        &__menu-item:active{
+            color: $active-color;
         }
         
         &__cart {
@@ -111,6 +145,9 @@
                 fill: $hover-color;
             } 
         }
+        &__cart-icon:active{
+            fill: $active-color;
+        }
 
         &__search {
             background: none;
@@ -124,24 +161,125 @@
                 fill: $hover-color;
             } 
         }
-        .slider {
-    
-            &__left {
-            }    
-            
-            &__content {
-            }
-    
-            &__right {
-            }
-    
-            &__pagination {
-            }
-    }
-        
+        &__search-icon:active{
+            fill: $active-color;
+        }      
 }
+.container-slider {
+    max-width: 1600px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.slider {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    &__left {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-top: 2px solid #ffffff;
+        border-left: 2px solid #ffffff;
+        opacity: 0.5;
+        transform: rotate(-45deg);
+        transition: $trans;
+    }
+    @media (min-width:$media998) {
+        &__left:hover{
+            border-top: 2px solid $hover-color;
+            border-left: 2px solid $hover-color;
+        } 
+    }
+    &__left:active{
+        border-top: 2px solid $active-color;
+        border-left: 2px solid $active-color;
+    }
+    
+    &__content {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+  
+    &__sub-title {
+        @include raleway(36, 1.2, 500);
+        margin: 0 0 14px 0;
+    }
+
+    &__title {
+        @include raleway(52, 1.2, 800);
+        margin: 0 0 19px 0;
+    }
+
+    &__text{
+        @include montserrat(16, 24px, 300);
+        margin: 0 0 52px 0;
+    }
+    &__button {
+        @include button-style;
+        transition: $trans;
+    }
+    @media (min-width:$media998) {
+        &__button:hover{
+            @include button-hover;
+        } 
+    }
+    &__button:active{
+        @include button-active;
+    } 
 
 
+    &__right {
+        display: block;
+        width: 40px;
+        height: 40px;
+        border-top: 2px solid #ffffff;
+        border-right: 2px solid #ffffff;
+        opacity: 0.5;
+        transform: rotate(45deg);
+    }
+    @media (min-width:$media998) {
+        &__right:hover{
+            border-top: 2px solid $hover-color;
+            border-right: 2px solid $hover-color;
+        } 
+    }
+    &__right:active{
+        border-top: 2px solid $active-color;
+        border-right: 2px solid $active-color;
+    }    
+}
+.header__pagination {
+    display: flex;
+    justify-content: center;
+
+    .header__pagination-item{
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-color: #ffffff;
+        opacity: 0.5;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        margin: 0 10px 0 0;
+        transition: $trans;
+    }
+    .header__pagination-item:last-child {
+        margin: 0;
+    }
+    @media (min-width:$media998) {
+        .header__pagination-item:hover{
+            background-color: transparent;
+            border: 2px solid #d3c1ad;
+        } 
+    }
+    .header__pagination-item:active{
+        background-color: $active-color;
+        border: 2px solid $active-color;
+    }
+}
 
 .main {
     flex: 1 1 auto;    
