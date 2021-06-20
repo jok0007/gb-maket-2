@@ -323,7 +323,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;    
-            justify-content: space-evenly;                    
+            justify-content: space-evenly;
+            transition: $trans;                    
 		}
         &__item::after {
             content: '';
@@ -349,6 +350,7 @@
 		&__img {
             fill: #555555;
             margin: 0 0 30px 0;
+            transition: $trans;
 		}
         @media (min-width:$media998) {
             .services__item:hover .services__img{
@@ -364,6 +366,7 @@
             @include raleway(22, 1.2, 600);
             color: #555555;
             margin: 0 0 20px 0;
+            transition: $trans;
 		}
         @media (min-width:$media998) {
             .services__item:hover .services__title{
@@ -379,9 +382,101 @@
             @include montserrat(14, 24px, 300);
             color: #8c8c8c;
             margin: 0 0 30px 0;
-
 		}
 }
+
+.realization {
+    background-color: #fbfaf8;
+    padding: 83px 0 0 0;
+    position: relative;
+
+    &__content {
+    max-width: 782px;
+    margin: 0 auto;
+    padding: 0 6px;
+    text-align: center
+    }
+
+    &__title {
+        @include raleway(30, 1.2, 600);
+        color: #555555;
+        margin: 0 0 24px 0;
+    }
+
+    &__text {
+        @include montserrat(16, 28px, 300);
+        color: #8c8c8c;
+        margin: 0 0 40px 0;
+    }
+
+    &__foto {
+    }
+    
+	&__foto1 {
+        position: absolute;
+        bottom: 0;
+        left: 25%;
+        transform: translate(-25%, 0);        
+	}
+
+	&__foto2 {
+        position: relative;
+        margin: 0 auto;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 2;
+	}
+
+	&__foto3 {
+        position: absolute;
+        bottom: 0;
+        left: 75%;
+        transform: translate(-75%, 0);
+	}
+}
+
+.advertisement {
+    background-color: #f4f5f8;
+    background-image: linear-gradient(90.0deg, #211b19 0%, #4e3427 100%);
+    padding: 50px 0;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        margin: 0 10px 0 0;
+    }
+
+    &__title {
+      @include raleway(28, 1.2, 400);
+      color: #ffffff;  
+    }
+    &__style{
+        color: #c7b299;
+    }
+
+    &__text {
+        @include montserrat(18, 1.2, 300);
+        color: #615855;
+    }
+
+    &__button {
+        @include button-style(); 
+        height: 50px;
+    }
+    @media (min-width:$media998) {
+        &__button:hover{
+        @include button-hover();
+    }
+    }
+    &__button:active{
+        @include button-active();
+    }
+}
+
+
 
 }
 .footer {
