@@ -55,19 +55,22 @@
 }
 .header {
     min-height: 100vh;    
-    background: url('../img/slider-foto.jpeg') 0 0 no-repeat;
+    background: url('../img/header_background.jpg') 0 0 no-repeat;
     background-color: #15181f;
     background-size: 100%;
-    padding: 40px 16px;
+    padding: 0 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 
         &__top {
-            width: 100%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        z-index: 2;
+        margin: 40px auto 0;
         }
         &__logo-container{
             flex: 4 1 auto;
@@ -165,9 +168,17 @@
             fill: $active-color;
         }      
 }
+.header::after{
+content: '';
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+background: rgba(0, 0, 0, .5);
+}
 .container-slider {
     max-width: 1600px;
-    padding: 0 10px;
     margin: 0 auto;
 }
 .slider {
@@ -176,9 +187,11 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    z-index: 2;    
 
     &__left {
         display: block;
+        margin-left: 10px;
         width: 40px;
         height: 40px;
         border-top: 2px solid #ffffff;
@@ -232,7 +245,8 @@
 
 
     &__right {
-        display: block;
+        display: block;        
+        margin-right: 10px;
         width: 40px;
         height: 40px;
         border-top: 2px solid #ffffff;
@@ -254,6 +268,8 @@
 .header__pagination {
     display: flex;
     justify-content: center;
+    z-index: 2;
+    margin: 0 0 42px 0;
 
     .header__pagination-item{
         display: block;
