@@ -48,6 +48,13 @@
      padding: 0 6px;
  }
 
+ .conteiner-center {
+    max-width: 782px;
+    margin: 0 auto;
+    padding: 0 6px;
+    text-align: center
+ }
+
 .wrapper {
      min-height: 100vh;
      display: flex;
@@ -388,14 +395,7 @@
 .realization {
     background-color: #fbfaf8;
     padding: 83px 0 0 0;
-    position: relative;
-
-    &__content {
-    max-width: 782px;
-    margin: 0 auto;
-    padding: 0 6px;
-    text-align: center
-    }
+    position: relative;    
 
     &__title {
         @include raleway(30, 1.2, 600);
@@ -407,10 +407,7 @@
         @include montserrat(16, 28px, 300);
         color: #8c8c8c;
         margin: 0 0 40px 0;
-    }
-
-    &__foto {
-    }
+    }    
     
 	&__foto1 {
         position: absolute;
@@ -476,7 +473,109 @@
     }
 }
 
+.project {
+    padding: 80px 0;
 
+    &__content {
+        margin: 0 auto 40px;
+    }
+
+    &__title {
+        @include raleway(30, 1.2, 600);
+        color: #555555;
+        margin: 0 0 24px 0;
+    }
+
+    &__text {
+        @include montserrat(16, 28px, 300);
+        color: #8c8c8c;
+        margin: 0 0 50px 0;
+    }
+
+    &__button {
+        padding: 10px 25px;
+        margin: 0 10px 0 0;
+        background-color: rgba(17,17,17,0.0);
+        border: 1px solid #ebebeb;
+        border-radius: 3px;
+        @include montserrat(14, 21px, 300);
+        color: #8c8c8c;
+        transition: $trans;
+    }
+    &__button:last-child {
+        margin: 0;
+    }  
+   
+    @media (min-width:$media998) {
+        &__button:hover{
+        background-color: #998675;
+        color: #ffffff;
+    }
+    }
+        &__button:active{
+        background-color: rgba(17,17,17,0.0);
+        color: #8c8c8c;
+    } 
+    
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 auto 40px;
+    }
+
+    &__item {
+        margin: 0 5px 30px 0;
+        flex: 0 1 370px;
+        background-color: #fbfaf8;
+    }      
+
+    &__container-foto{
+        margin: 0 0 30px 0; 
+        position: relative;
+    }
+    &__container-foto::before {
+        content: "";
+        display: block;
+        position: absolute;        
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 10px solid #fbfaf8;
+        bottom: 0;
+        left: 19px;
+        z-index: 1;
+    }
+
+    &__item-title {
+        @include raleway(20, 1.2, 500);
+        color: #c7b299;
+        margin: 0 0 14px 30px;
+    }
+
+    &__item-text {
+        @include montserrat(14, 20px, 300);
+        color: #d1d1d1;
+        margin: 0 0 27px 30px;
+    }
+    &__btn{
+        display: flex;
+        justify-content: center
+    }
+	&__button-bottom {
+        @include button-style();
+        transition: $trans;        
+	}
+    @media (min-width:$media998) {
+        &__button-bottom:hover{
+    @include button-hover();
+    }
+    }
+    &__button-bottom:active{
+    @include button-active();
+    }
+
+
+}
 
 }
 .footer {
