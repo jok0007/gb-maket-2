@@ -1,0 +1,170 @@
+.posts {
+    margin: 0 0 80px 0;
+
+    &__title {
+        @include raleway(30, 1.2, 600);
+        color: #555555;
+        margin: 0 0 30px 0;
+        text-align: center;
+        transition: $trans;
+    }
+
+    &__text {
+        @include montserrat(16, 28px, 300);
+        color: #8c8c8c;
+        margin: 0 auto 40px;
+        transition: $trans;
+    }
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0 auto 40px;
+    }
+
+    &__item {
+        flex: 0 0 370px;
+        margin: 0 5px 0 0;
+        position: relative;
+        transition: $trans;
+
+        @media (min-width: $media998) {
+            &:hover {
+                background-color: #362f2d;
+            }
+            &:hover .posts__item-title {
+                color: #c7b299;
+            }
+            &:hover .posts__item-text {
+                color: #ffffff;
+            }
+            &:hover .posts__more {
+                color: #c7b299;
+            }
+            &:hover .posts__image {
+                filter: brightness(33%);
+            }
+            &:hover .posts__data {
+                background-color: #c7b299;
+            }
+            &:hover .posts__month {
+                background-color: #a48d72;
+            }
+        }
+    }
+
+    &__image {
+        margin: 0 0 30px 0;
+        position: relative;
+        transition: $trans;
+    }
+
+    &__image-pagination {
+        display: flex;
+        justify-content: center;
+        z-index: 2;
+        margin: 0 auto;
+        position: absolute;
+        top: 185px;
+        left: 50%;
+        transform: translate(-50%, 0px);
+
+        .posts__image-pagination-item {
+            display: block;
+            width: 11px;
+            height: 11px;
+            background-color: #ffffff;
+            opacity: 0.3;
+            border-radius: 50%;
+            border: 2px solid transparent;
+            margin: 0 9px 0 0;
+            transition: $trans;
+
+            @media (min-width: $media998) {
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0);
+                    border: 2px solid #d3c1ad;
+                }
+            }
+            &:active {
+                background-color: $active-color;
+                border: 2px solid $active-color;
+            }
+        }
+        .posts__image-pagination-item:last-child {
+            margin: 0;
+        }
+    }
+
+    &__item-title {
+        @include raleway(20, 1.2, 500);
+        color: #555555;
+        margin: 0 0 19px 29px;
+    }
+
+    &__item-text {
+        @include montserrat(14, 22px, 300);
+        color: #8c8c8c;
+        margin: 0 0 27px 29px;
+    }
+
+    &__more {
+        display: block;
+        max-width: max-content;
+        @include montserrat(14, 20px, 300);
+        color: #c7b299;
+        margin: 0 0 33px 29px;
+        position: relative;
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            border-top: 4px solid transparent;
+            border-left: 5px solid #c7b299;
+            border-bottom: 4px solid transparent;
+            top: 6px;
+            right: -17px;
+        }
+    }
+
+    &__data-container {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        width: 50px;
+        height: 60px;
+        text-align: center;
+    }
+
+    &__data {
+        @include montserrat(24, 20px, 300);
+        line-height: 35px;
+        background-color: #363636;
+        border-radius: 3px 3px 0px 0px;
+        transition: $trans;
+    }
+
+    &__month {
+        display: block;
+        @include roboto(12, 20, 400);
+        background-color: #252525;
+        border-radius: 0px 0px 3px 3px;
+        transition: $trans;
+    }
+
+    &__pagination {
+        margin: 0 auto;
+        max-width: max-content;
+    }
+
+    &__pagination-image1 {
+        margin: 0 8px 0 0;
+        fill: #d1d1d1;
+    }
+    &__pagination-image2 {
+        margin: 0 8px 0 0;
+        fill: #c7b299;
+    }
+}

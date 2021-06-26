@@ -1,0 +1,44 @@
+@mixin button-style {
+    font-family: raleway;
+    font-size: 14px;
+    line-height: 23px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 170px;
+    height: 53px;
+    background-color: #998675;
+    box-shadow: inset 0px -3px 0px 0px #736357;
+    border-radius: 3px;
+}
+@mixin button-hover {
+    color: #998675;
+    background-color: #ffffff;
+}
+@mixin button-active {
+    color: #ffffff;
+    background-color: #998675;
+}
+@mixin montserrat($fz, $lh, $fw) {
+    font-family: montserrat;
+    font-size: $fz + px;
+    line-height: $lh;
+    font-weight: $fw;
+    color: #ffffff;
+}
+@mixin raleway($fz, $lh, $fw) {
+    font-family: Raleway;
+    font-size: $fz + px;
+    line-height: $lh;
+    font-weight: $fw;
+    color: #ffffff;
+}
+
+@mixin roboto($fz, $lh, $fw) {
+    font-family: Roboto;
+    font-size: $fz + px;
+    line-height: $lh + px;
+    font-weight: $fw;
+    color: #ffffff;
+}

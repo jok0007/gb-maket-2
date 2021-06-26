@@ -1,0 +1,35 @@
+.partners {
+    padding: 140px 0;
+    background: url("../scr/main/partners/img/partners_back.jpg") 0 0 no-repeat;
+    background-size: cover;
+    background-color: #15181f;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(17, 17, 17, 0.7);
+    }
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__container {
+        display: flex;
+        flex: 1 1 auto;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0 10px 0 0;
+
+        &__container:last-child {
+            margin: 0;
+        }
+    }
+}
