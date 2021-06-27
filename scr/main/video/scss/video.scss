@@ -2,8 +2,9 @@
     margin: 0 0 80px 0;
 
     &__container {
-        min-height: 705px;
+        padding: 10% 0;
         background: url("../scr/main/video/img/back-video.jpg") 0 0 no-repeat;
+        background-color: #191919;
         background-size: cover;
         display: flex;
         justify-content: center;

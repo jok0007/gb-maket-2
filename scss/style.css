@@ -984,8 +984,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .video__container {
-  min-height: 705px;
+  padding: 10% 0;
   background: url("../scr/main/video/img/back-video.jpg") 0 0 no-repeat;
+  background-color: #191919;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
