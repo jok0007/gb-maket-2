@@ -4,20 +4,36 @@
 
     // .footer-bottom_items
     &__items {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        text-align: center;
+
+        @media (min-width: 450px) {
+            & {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+        }
     }
 
     // .footer-bottom__item
 
     &__item {
-        display: flex;
-        max-width: max-content;
-        margin: 0 10px 0 0;
-
         &:last-child {
             margin: 0;
+        }
+
+        @media (min-width: 450px) {
+            & {
+                display: flex;
+                max-width: max-content;
+                margin: 0 10px 0 0;
+            }
+        }
+
+        @media (max-width: 760px) {
+            & {
+                margin: 0 0 20px 0;
+            }
         }
     }
 
@@ -26,11 +42,18 @@
     &__text {
         @include montserrat(13, 20px, 300);
         color: #555555;
+        margin: 0 0 20px 0;
         padding: 0 12px;
         border-right: 1px solid #252525;
 
         &:last-child {
             border-right: none;
+        }
+
+        @media (min-width: 450px) {
+            & {
+                margin: 0;
+            }
         }
     }
 
