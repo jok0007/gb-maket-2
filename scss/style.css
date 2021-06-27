@@ -1095,28 +1095,59 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 705px;
 }
 
-.excellent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: start;
+@media (min-width: 760px) {
+  .excellent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: start;
+  }
+}
+
+.excellent__container-image {
+  text-align: center;
+}
+
+@media (min-width: 760px) {
+  .excellent__container-image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 49%;
+            flex: 0 1 49%;
+  }
+}
+
+.excellent__image {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .excellent__info {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 665px;
-          flex: 0 1 665px;
+  margin: 0 0 40px 0;
+}
+
+@media (min-width: 760px) {
+  .excellent__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 49%;
+            flex: 0 1 49%;
+  }
 }
 
 .excellent__title {
+  text-align: center;
   font-family: Raleway;
   font-size: 30px;
   line-height: 1.2;
@@ -1124,6 +1155,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   color: #555555;
   margin: 0 0 40px 0;
+}
+
+@media (min-width: 760px) {
+  .excellent__title {
+    text-align: start;
+  }
 }
 
 .excellent__text {
@@ -1136,8 +1173,10 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 45px 0;
 }
 
-.excellent__list {
-  margin: 0 0 0 50px;
+@media (min-width: 760px) {
+  .excellent__list {
+    margin: 0 0 0 50px;
+  }
 }
 
 .excellent__list li {
@@ -1187,7 +1226,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .statistics__item {
-  margin: 0 0 40px 0;
+  margin: 0 0 60px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
