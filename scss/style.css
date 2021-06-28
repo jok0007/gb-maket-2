@@ -174,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 6px;
   background: url("../scr/header/img-header/header_background.jpg") 0 0 no-repeat;
   background-color: #15181f;
-  background-size: 100%;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -527,40 +527,52 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto 80px;
 }
 
-.services__items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 575px;
-          flex: 1 1 575px;
+@media (min-width: 620px) {
+  .services__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 49%;
+            flex: 1 1 49%;
+    margin: 0 20px 20px 0;
+  }
+  .services__items:last-child {
+    margin: 0 0 20px 0;
+  }
 }
 
-.services__item {
-  margin: 0 10px 0 0;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 275px;
-          flex: 0 1 275px;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-transition: all 0.25s ease 0s;
-  transition: all 0.25s ease 0s;
+@media (min-width: 620px) {
+  .services__item {
+    margin: 0 10px 0 0;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 275px;
+            flex: 0 1 275px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-transition: all 0.25s ease 0s;
+    transition: all 0.25s ease 0s;
+    margin: 0 20px 20px 0;
+  }
+  .services__item:last-child {
+    margin: 0 0 20px 0;
+  }
 }
 
 @media (min-width: 998px) {
@@ -619,6 +631,15 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.25s ease 0s;
 }
 
+.services__style {
+  font-family: Raleway;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #ffffff;
+  color: #c7b299;
+}
+
 .services__text {
   font-family: montserrat;
   font-size: 14px;
@@ -646,6 +667,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .realization__text {
+  margin: 0 0 20px 0;
   font-family: montserrat;
   font-size: 16px;
   line-height: 28px;
@@ -656,28 +678,53 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .realization__foto1 {
-  position: absolute;
-  bottom: 0;
-  left: 25%;
-  -webkit-transform: translate(-25%, 0);
-          transform: translate(-25%, 0);
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 0 20px 0;
+}
+
+@media (min-width: 780px) {
+  .realization__foto1 {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    -webkit-transform: translate(-25%, 0);
+            transform: translate(-25%, 0);
+  }
 }
 
 .realization__foto2 {
-  position: relative;
-  margin: 0 auto;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  z-index: 2;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 780px) {
+  .realization__foto2 {
+    position: relative;
+    margin: 0 auto;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    z-index: 2;
+  }
 }
 
 .realization__foto3 {
-  position: absolute;
-  bottom: 0;
-  left: 75%;
-  -webkit-transform: translate(-75%, 0);
-          transform: translate(-75%, 0);
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 780px) {
+  .realization__foto3 {
+    position: absolute;
+    bottom: 0;
+    left: 75%;
+    -webkit-transform: translate(-75%, 0);
+            transform: translate(-75%, 0);
+  }
 }
 
 .advertisement {

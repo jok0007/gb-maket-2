@@ -10,30 +10,44 @@
     }
 
     &__text {
+        margin: 0 0 20px 0;
         @include montserrat(16, 28px, 300);
         color: #8c8c8c;
         margin: 0 0 40px 0;
     }
 
     &__foto1 {
-        position: absolute;
-        bottom: 0;
-        left: 25%;
-        transform: translate(-25%, 0);
+        max-width: 100%;
+        object-fit: cover;
+        margin: 0 0 20px 0;
+        @media (min-width: 780px) {
+            position: absolute;
+            bottom: 0;
+            left: 25%;
+            transform: translate(-25%, 0);
+        }
     }
 
     &__foto2 {
-        position: relative;
-        margin: 0 auto;
-        left: 50%;
-        transform: translate(-50%, 0);
-        z-index: 2;
+        max-width: 100%;
+        object-fit: cover;
+        @media (min-width: 780px) {
+            position: relative;
+            margin: 0 auto;
+            left: 50%;
+            transform: translate(-50%, 0);
+            z-index: 2;
+        }
     }
 
     &__foto3 {
-        position: absolute;
-        bottom: 0;
-        left: 75%;
-        transform: translate(-75%, 0);
+        max-width: 100%;
+        object-fit: cover;
+        @media (min-width: 780px) {
+            position: absolute;
+            bottom: 0;
+            left: 75%;
+            transform: translate(-75%, 0);
+        }
     }
 }
