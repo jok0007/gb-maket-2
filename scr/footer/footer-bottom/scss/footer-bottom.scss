@@ -1,0 +1,100 @@
+.footer-bottom {
+    padding: 45px 0 52px;
+    background-color: #111111;
+
+    // .footer-bottom_items
+    &__items {
+        text-align: center;
+
+        @media (min-width: 450px) {
+            & {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+        }
+    }
+
+    // .footer-bottom__item
+
+    &__item {
+        &:last-child {
+            margin: 0;
+        }
+
+        @media (min-width: 450px) {
+            & {
+                display: flex;
+                max-width: max-content;
+                margin: 0 10px 0 0;
+            }
+        }
+
+        @media (max-width: 760px) {
+            & {
+                margin: 0 0 20px 0;
+            }
+        }
+    }
+
+    // .footer-bottom__text
+
+    &__text {
+        @include montserrat(13, 20px, 300);
+        color: #555555;
+        margin: 0 0 20px 0;
+        padding: 0 12px;
+        border-right: 1px solid #252525;
+
+        &:last-child {
+            border-right: none;
+        }
+
+        @media (min-width: 450px) {
+            & {
+                margin: 0;
+            }
+        }
+    }
+
+    // .footer-bottom__link-waxom
+
+    &__link-waxom {
+        @include montserrat(13, 20px, 300);
+        color: #959595;
+        transition: $trans;
+
+        @media (min-width: $media998) {
+            &:hover {
+                color: $hover-color;
+            }
+        }
+        &:active {
+            color: $active-color;
+        }
+    }
+
+    // .footer-bottom__link
+
+    &__link {
+        @include montserrat(13, 20px, 300);
+        color: #555555;
+        transition: $trans;
+        padding: 0 12px;
+        border-right: 1px solid #252525;
+        transition: $trans;
+
+        &:last-child {
+            border-right: none;
+        }
+
+        @media (min-width: $media998) {
+            &:hover {
+                color: $hover-color;
+            }
+        }
+        &:active {
+            color: $active-color;
+        }
+    }
+}

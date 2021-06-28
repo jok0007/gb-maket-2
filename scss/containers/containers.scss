@@ -1,0 +1,30 @@
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1186px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.container-slider {
+    max-width: 1632px;
+    margin: 0 auto;
+}
+
+.conteiner-center {
+    max-width: 782px;
+    margin: 0 auto;
+    padding: 0 6px;
+    text-align: center;
+}
+
+.conteiner-center-video {
+    max-width: 770px;
+    margin: 0 auto;
+    padding: 0 6px;
+    text-align: center;
+}

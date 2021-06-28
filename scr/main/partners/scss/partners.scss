@@ -1,0 +1,58 @@
+.partners {
+    padding: 140px 0;
+    background: url("../scr/main/partners/img/partners_back.jpg") 0 0 no-repeat;
+    background-size: cover;
+    background-color: #15181f;
+    position: relative;
+
+    &__content {
+        @media (min-width: 580px) {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+
+    &__container {
+        margin: 0 auto 50px;
+
+        @media (min-width: 580px) {
+            display: flex;
+            flex: 1 1 auto;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0 0 50px 0;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+
+        @media (min-width: 900px) {
+            margin: 0 50px 50px 0;
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+
+    &__image {
+        display: block;
+        margin: 0 auto 50px;
+
+        @media (min-width: 580px) {
+            margin: 0 20px 50px 20px;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+
+        @media (min-width: 900px) {
+            margin: 0 50px 50px 0;
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+}

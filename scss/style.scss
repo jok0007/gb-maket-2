@@ -1,150 +1,19 @@
- @import "style0.scss";
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Raleway:wght@400;500;600;700;800&display=swap');
- $hover-color:#c7b299;
- $trans: all .25s ease 0s;
- $media998: 998px;
-
-
-
-
- body {
-     font-family: Montserrat;
- }
-
-.container {
-     max-width: 1242px;
-     margin: 0 auto;
-     padding: 0 6px;
- }
-
-.wrapper {
-     min-height: 100vh;
-     display: flex;
-     flex-direction: column;     
-}
-.header {
-    min-height: 100vh;    
-    background: url('../img/slider-foto.jpeg') 0 0 no-repeat;
-    background-color: #15181f;
-    background-size: 100%;
-    padding: 40px 16px;
-    display: flex;
-    flex-direction: column;
-
-        &__top {
-            width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        }
-        &__logo-container{
-            flex: 4 1 auto;
-        }
-        
-        &__logo {  
-            display: flex;
-            align-items: center;
-            max-width: 190px;
-            margin: 0 10px 0 0;                        
-            text-decoration: none;
-            color: #ffffff;
-            transition: $trans;
-        }
-        @media (min-width:$media998) {
-            &__logo:hover{
-                color: $hover-color;
-            } 
-        }
-        
-        &__logo-svg {
-            fill: currentColor;
-        }
-                
-        &__logo-text {
-        font-family: Raleway;
-        font-size: 34px;
-        line-height: 1.2;
-        font-weight: 400;
-        letter-spacing: -0.04em;
-        }
-                
-        &__menu {
-            margin: 0 10px 0 0;
-            flex: 1 1 auto;
-        }
-        &__menu-items{
-            display: flex;
-        }
-        &__menu-items li {
-            list-style-type: none;
-            margin: 0 30px 0 0;
-        }
-        &__menu-items li:last-child{
-            margin: 0;
-        } 
-        
-        &__menu-item {            
-            font-family: Montserrat;
-            font-size: 14px;
-            line-height: 1.2;
-            font-weight: 300;
-            color: #ffffff;
-            transition: $trans;
-        }
-        
-        @media (min-width:$media998) {
-            &__menu-item:hover{
-                color: $hover-color;
-            } 
-        }
-        
-        &__cart {
-            background: none;
-            margin: 0 30px 0 0;
-        }
-        &__cart-icon{
-            fill: #ffffff;
-            transition: $trans;
-        }
-        @media (min-width:$media998) {
-            &__cart-icon:hover{
-                fill: $hover-color;
-            } 
-        }
-
-        &__search {
-            background: none;
-        }
-        &__search-icon{
-            fill: #ffffff;
-            transition: $trans;
-        }
-        @media (min-width:$media998) {
-            &__search-icon:hover{
-                fill: $hover-color;
-            } 
-        }
-        .slider {
-    
-            &__left {
-            }    
-            
-            &__content {
-            }
-    
-            &__right {
-            }
-    
-            &__pagination {
-            }
-    }
-        
-}
-
-
-
-.main {
-    flex: 1 1 auto;    
-}
-.footer {
-}
+@import "style0/style0.scss";
+@import "../fonts/fonts.scss";
+@import "containers/containers.scss";
+@import "mixin/mixin.scss";
+@import "variables/variables.scss";
+@import "../scr/header/scss/header.scss";
+@import "../scr/header/_slider/scss/slider.scss";
+@import "../scr/main/scss/main.scss";
+@import "../scr/main/services/scss/services.scss";
+@import "../scr/main/realization/scss/realization.scss";
+@import "../scr/main/advertisement/scss/advertisement.scss";
+@import "../scr/main/project/scss/project.scss";
+@import "../scr/main/video/scss/video.scss";
+@import "../scr/main/excellent/scss/excellent.scss";
+@import "../scr/main/statistics/scss/statistics.scss";
+@import "../scr/main/posts/scss/posts.scss";
+@import "../scr/main/partners/scss/partners.scss";
+@import "../scr/footer/footer-top/scss/footer-top.scss";
+@import "../scr/footer/footer-bottom/scss/footer-bottom.scss";

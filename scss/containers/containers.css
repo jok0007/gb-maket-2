@@ -1,0 +1,36 @@
+.wrapper {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  max-width: 1186px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.container-slider {
+  max-width: 1632px;
+  margin: 0 auto;
+}
+
+.conteiner-center {
+  max-width: 782px;
+  margin: 0 auto;
+  padding: 0 6px;
+  text-align: center;
+}
+
+.conteiner-center-video {
+  max-width: 770px;
+  margin: 0 auto;
+  padding: 0 6px;
+  text-align: center;
+}
+/*# sourceMappingURL=containers.css.map */
