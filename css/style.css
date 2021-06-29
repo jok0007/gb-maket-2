@@ -1100,12 +1100,22 @@ h1, h2, h3, h4, h5, h6 {
   z-index: -1;
 }
 
+#slider1:checked ~ .header__pagination .header__pagination-item:nth-child(1) {
+  background-color: transparent;
+  border: 2px solid #d3c1ad;
+}
+
 #slider2:checked ~ .slider2 {
   margin: 0;
 }
 
 #slider2:checked ~ .slider1 {
   margin: 0 0 0 -100%;
+}
+
+#slider2:checked ~ .header__pagination .header__pagination-item:nth-child(2) {
+  background-color: transparent;
+  border: 2px solid #d3c1ad;
 }
 
 #slider3:checked ~ .slider3 {
@@ -1116,6 +1126,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0 -100%;
 }
 
+#slider3:checked ~ .header__pagination .header__pagination-item:nth-child(3) {
+  background-color: transparent;
+  border: 2px solid #d3c1ad;
+}
+
 #slider4:checked ~ .slider4 {
   margin: 0;
 }
@@ -1124,12 +1139,22 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0 -100%;
 }
 
+#slider4:checked ~ .header__pagination .header__pagination-item:nth-child(4) {
+  background-color: transparent;
+  border: 2px solid #d3c1ad;
+}
+
 #slider5:checked ~ .slider5 {
   margin: 0;
 }
 
 #slider5:checked ~ .slider4 {
   margin: 0 0 0 -100%;
+}
+
+#slider5:checked ~ .header__pagination .header__pagination-item:nth-child(5) {
+  background-color: transparent;
+  border: 2px solid #d3c1ad;
 }
 
 .main {
