@@ -1,0 +1,77 @@
+.realization {
+  background-color: #fbfaf8;
+  padding: 83px 0 0 0;
+  position: relative;
+}
+
+.realization__title {
+  font-family: Raleway;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+  color: #555555;
+  margin: 0 0 24px 0;
+}
+
+.realization__text {
+  margin: 0 0 20px 0;
+  font-family: montserrat;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #ffffff;
+  color: #8c8c8c;
+  margin: 0 0 40px 0;
+}
+
+.realization__foto1 {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 0 20px 0;
+}
+
+@media (min-width: 780px) {
+  .realization__foto1 {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    -webkit-transform: translate(-25%, 0);
+            transform: translate(-25%, 0);
+  }
+}
+
+.realization__foto2 {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 780px) {
+  .realization__foto2 {
+    position: relative;
+    margin: 0 auto;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    z-index: 2;
+  }
+}
+
+.realization__foto3 {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media (min-width: 780px) {
+  .realization__foto3 {
+    position: absolute;
+    bottom: 0;
+    left: 75%;
+    -webkit-transform: translate(-75%, 0);
+            transform: translate(-75%, 0);
+  }
+}
+/*# sourceMappingURL=realization.css.map */

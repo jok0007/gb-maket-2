@@ -1,0 +1,113 @@
+@media (min-width: 760px) {
+  .excellent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-flow: row-reverse;
+            flex-flow: row-reverse;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: start;
+  }
+}
+
+.excellent__container-image {
+  text-align: center;
+}
+
+@media (min-width: 760px) {
+  .excellent__container-image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 49%;
+            flex: 0 1 49%;
+  }
+}
+
+.excellent__image {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
+}
+
+.excellent__info {
+  margin: 0 0 40px 0;
+}
+
+@media (min-width: 760px) {
+  .excellent__info {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 49%;
+            flex: 0 1 49%;
+  }
+}
+
+.excellent__title {
+  text-align: center;
+  font-family: Raleway;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #ffffff;
+  color: #555555;
+  margin: 0 0 40px 0;
+}
+
+@media (min-width: 760px) {
+  .excellent__title {
+    text-align: start;
+  }
+}
+
+.excellent__text {
+  font-family: montserrat;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #ffffff;
+  color: #8c8c8c;
+  margin: 0 0 45px 0;
+}
+
+@media (min-width: 760px) {
+  .excellent__list {
+    margin: 0 0 0 50px;
+  }
+}
+
+.excellent__list li {
+  list-style-type: none;
+  font-family: montserrat;
+  font-size: 16px;
+  line-height: 32px;
+  font-weight: 300;
+  color: #ffffff;
+  color: #8c8c8c;
+  margin: 0 0 5px 47px;
+  position: relative;
+}
+
+.excellent__list li::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 21px;
+  height: 21px;
+  left: -47px;
+  top: 5px;
+  background: url("../scr/main/excellent/img/excellent-item.png") 0 0 no-repeat;
+}
+
+.excellent__list li:last-child {
+  margin: 0 0 0 47px;
+}
+/*# sourceMappingURL=excellent.css.map */

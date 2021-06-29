@@ -1,9 +1,8 @@
+@import "../../../scss/mixin/mixin.scss";
+@import "../../../scss/variables/variables.scss";
 .header {
     min-height: 100vh;
     padding: 0 6px;
-    background: url("../scr/header/img-header/header_background.jpg") 0 0 no-repeat;
-    background-color: #15181f;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -15,7 +14,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        z-index: 2;
+        z-index: 4;
         margin: 40px auto 0;
         padding: 0;
     }
@@ -117,16 +116,6 @@
         }
     }
 
-    &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: rgba(0, 0, 0, 0.5);
-    }
-
     &__pagination {
         display: flex;
         justify-content: center;
@@ -134,6 +123,7 @@
         margin: 0 0 42px 0;
 
         .header__pagination-item {
+            cursor: pointer;
             display: block;
             width: 15px;
             height: 15px;

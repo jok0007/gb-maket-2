@@ -1,0 +1,115 @@
+.footer-bottom {
+  padding: 45px 0 52px;
+  background-color: #111111;
+}
+
+.footer-bottom__items {
+  text-align: center;
+}
+
+@media (min-width: 450px) {
+  .footer-bottom__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.footer-bottom__item:last-child {
+  margin: 0;
+}
+
+@media (min-width: 450px) {
+  .footer-bottom__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    margin: 0 10px 0 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .footer-bottom__item {
+    margin: 0 0 20px 0;
+  }
+}
+
+.footer-bottom__text {
+  font-family: montserrat;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #ffffff;
+  color: #555555;
+  margin: 0 0 20px 0;
+  padding: 0 12px;
+  border-right: 1px solid #252525;
+}
+
+.footer-bottom__text:last-child {
+  border-right: none;
+}
+
+@media (min-width: 450px) {
+  .footer-bottom__text {
+    margin: 0;
+  }
+}
+
+.footer-bottom__link-waxom {
+  font-family: montserrat;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #ffffff;
+  color: #959595;
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+}
+
+@media (min-width: 998px) {
+  .footer-bottom__link-waxom:hover {
+    color: #c7b299;
+  }
+}
+
+.footer-bottom__link-waxom:active {
+  color: #af8141;
+}
+
+.footer-bottom__link {
+  font-family: montserrat;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #ffffff;
+  color: #555555;
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+  padding: 0 12px;
+  border-right: 1px solid #252525;
+  transition: all 0.25s ease 0s;
+}
+
+.footer-bottom__link:last-child {
+  border-right: none;
+}
+
+@media (min-width: 998px) {
+  .footer-bottom__link:hover {
+    color: #c7b299;
+  }
+}
+
+.footer-bottom__link:active {
+  color: #af8141;
+}
+/*# sourceMappingURL=footer-bottom.css.map */
