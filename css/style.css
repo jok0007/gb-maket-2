@@ -409,7 +409,7 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: url("../scr/header/img-header/header_background.jpg") 0 0 no-repeat;
+  background: url("/img/header_background.jpg") 0 0 no-repeat;
   background-color: #15181f;
   background-size: cover;
   z-index: 2;
@@ -550,7 +550,7 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: url("../scr/header/_slider/img/foto-slider-2.jpg") 0 0 no-repeat;
+  background: url("/img/foto-slider-2.jpg") 0 0 no-repeat;
   background-color: #15181f;
   background-size: cover;
   z-index: 2;
@@ -691,7 +691,7 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: url("../scr/header/_slider/img/foto-slider-3.jpg") 0 0 no-repeat;
+  background: url("/img/foto-slider-3.jpg") 0 0 no-repeat;
   background-color: #15181f;
   background-size: cover;
   z-index: 2;
@@ -832,7 +832,7 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: url("../scr/header/_slider/img/foto-slider-4.jpg") 0 0 no-repeat;
+  background: url("/img/foto-slider-4.jpg") 0 0 no-repeat;
   background-color: #15181f;
   background-size: cover;
   z-index: 2;
@@ -973,7 +973,7 @@ h1, h2, h3, h4, h5, h6 {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: url("../scr/header/_slider/img/foto-slider-5.jpeg") 0 0 no-repeat;
+  background: url("/img/foto-slider-5.jpeg") 0 0 no-repeat;
   background-color: #15181f;
   background-size: cover;
   z-index: 2;
@@ -1714,7 +1714,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .video__container {
   padding: 10% 0;
-  background: url("../scr/main/video/img/back-video.jpg") 0 0 no-repeat;
+  background: url("../img/back-video.jpg") 0 0 no-repeat;
   background-color: #191919;
   background-size: cover;
   display: -webkit-box;
@@ -1933,7 +1933,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 21px;
   left: -47px;
   top: 5px;
-  background: url("../scr/main/excellent/img/excellent-item.png") 0 0 no-repeat;
+  background: url("../img/excellent-item.png") 0 0 no-repeat;
 }
 
 .excellent__list li:last-child {
@@ -2268,7 +2268,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .partners {
   padding: 140px 0;
-  background: url("../scr/main/partners/img/partners_back.jpg") 0 0 no-repeat;
+  background: url("../img/partners_back.jpg") 0 0 no-repeat;
   background-size: cover;
   background-color: #15181f;
   position: relative;
