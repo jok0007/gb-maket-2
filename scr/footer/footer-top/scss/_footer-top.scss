@@ -197,9 +197,21 @@
 
     &__image {
         margin: 0 10px 0 0;
+        transition: transform 0.25s ease 0s, filter 0.25s ease 0s;
 
         &:last-child {
             margin: 0;
+        }
+
+        @media (min-width: $media998) {
+            &:hover {
+                transform: scale(1.05);
+                filter: brightness(90%);
+            }
+        }
+        &:active {
+            transform: scale(1.05);
+            filter: brightness(70%);
         }
     }
 }

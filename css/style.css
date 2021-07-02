@@ -2256,6 +2256,10 @@ h1, h2, h3, h4, h5, h6 {
   max-width: max-content;
 }
 
+.posts__button {
+  background: none;
+}
+
 .posts__pagination-image1 {
   margin: 0 8px 0 0;
   fill: #d1d1d1;
@@ -2272,6 +2276,10 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   background-color: #15181f;
   position: relative;
+}
+
+.partners__content {
+  text-align: center;
 }
 
 @media (min-width: 580px) {
@@ -2310,7 +2318,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1020px) {
   .partners__container {
     margin: 0 50px 50px 0;
   }
@@ -2322,6 +2330,29 @@ h1, h2, h3, h4, h5, h6 {
 .partners__image {
   display: block;
   margin: 0 auto 50px;
+  -webkit-transition: -webkit-transform 0.25s ease 0s, -webkit-filter 0.25s ease 0s;
+  transition: -webkit-transform 0.25s ease 0s, -webkit-filter 0.25s ease 0s;
+  -o-transition: transform 0.25s ease 0s, filter 0.25s ease 0s;
+  transition: transform 0.25s ease 0s, filter 0.25s ease 0s;
+  transition: transform 0.25s ease 0s, filter 0.25s ease 0s, -webkit-transform 0.25s ease 0s, -webkit-filter 0.25s ease 0s;
+}
+
+@media (min-width: 998px) {
+  .partners__image:hover {
+    -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+            transform: scale(1.03);
+    -webkit-filter: brightness(90%);
+            filter: brightness(90%);
+  }
+}
+
+.partners__image:active {
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
 }
 
 @media (min-width: 580px) {
@@ -2333,7 +2364,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1020px) {
   .partners__image {
     margin: 0 50px 50px 0;
   }
@@ -2575,10 +2606,33 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer-top__image {
   margin: 0 10px 0 0;
+  -webkit-transition: -webkit-transform 0.25s ease 0s, -webkit-filter 0.25s ease 0s;
+  transition: -webkit-transform 0.25s ease 0s, -webkit-filter 0.25s ease 0s;
+  -o-transition: transform 0.25s ease 0s, filter 0.25s ease 0s;
+  transition: transform 0.25s ease 0s, filter 0.25s ease 0s;
+  transition: transform 0.25s ease 0s, filter 0.25s ease 0s, -webkit-transform 0.25s ease 0s, -webkit-filter 0.25s ease 0s;
 }
 
 .footer-top__image:last-child {
   margin: 0;
+}
+
+@media (min-width: 998px) {
+  .footer-top__image:hover {
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05);
+    -webkit-filter: brightness(90%);
+            filter: brightness(90%);
+  }
+}
+
+.footer-top__image:active {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
 }
 
 .footer-bottom {

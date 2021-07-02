@@ -6,6 +6,7 @@
     position: relative;
 
     &__content {
+        text-align: center;
         @media (min-width: 580px) {
             display: flex;
             flex-wrap: wrap;
@@ -28,7 +29,7 @@
             }
         }
 
-        @media (min-width: 900px) {
+        @media (min-width: 1020px) {
             margin: 0 50px 50px 0;
             &:last-child {
                 margin: 0;
@@ -39,6 +40,18 @@
     &__image {
         display: block;
         margin: 0 auto 50px;
+        transition: transform 0.25s ease 0s, filter 0.25s ease 0s;
+
+        @media (min-width: $media998) {
+            &:hover {
+                transform: scale(1.03);
+                filter: brightness(90%);
+            }
+        }
+        &:active {
+            transform: scale(1.03);
+            filter: brightness(70%);
+        }
 
         @media (min-width: 580px) {
             margin: 0 20px 50px 20px;
@@ -48,7 +61,7 @@
             }
         }
 
-        @media (min-width: 900px) {
+        @media (min-width: 1020px) {
             margin: 0 50px 50px 0;
             &:last-child {
                 margin: 0;
