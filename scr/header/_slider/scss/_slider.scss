@@ -55,12 +55,24 @@
         margin: 0 auto;
     }
     &__sub-title {
-        @include raleway(36, 1.2, 500);
+        @include raleway(24, 1.2, 500);
         margin: 0 0 14px 0;
+
+        @media (min-width: 620px) {
+            & {
+                @include raleway(36, 1.2, 500);
+            }
+        }
     }
     &__title {
-        @include raleway(52, 1.2, 800);
+        @include raleway(36, 1.2, 800);
         margin: 0 0 19px 0;
+
+        @media (min-width: 620px) {
+            & {
+                @include raleway(52, 1.2, 800);
+            }
+        }
     }
     &__text {
         @include montserrat(16, 24px, 300);
@@ -156,12 +168,24 @@
         margin: 0 auto;
     }
     &__sub-title {
-        @include raleway(36, 1.2, 500);
+        @include raleway(24, 1.2, 500);
         margin: 0 0 14px 0;
+
+        @media (min-width: 620px) {
+            & {
+                @include raleway(36, 1.2, 500);
+            }
+        }
     }
     &__title {
-        @include raleway(52, 1.2, 800);
+        @include raleway(36, 1.2, 800);
         margin: 0 0 19px 0;
+
+        @media (min-width: 620px) {
+            & {
+                @include raleway(52, 1.2, 800);
+            }
+        }
     }
     &__text {
         @include montserrat(16, 24px, 300);
@@ -258,12 +282,24 @@
         margin: 0 auto;
     }
     &__sub-title {
-        @include raleway(36, 1.2, 500);
+        @include raleway(24, 1.2, 500);
         margin: 0 0 14px 0;
+
+        @media (min-width: 620px) {
+            & {
+                @include raleway(36, 1.2, 500);
+            }
+        }
     }
     &__title {
-        @include raleway(52, 1.2, 800);
+        @include raleway(36, 1.2, 800);
         margin: 0 0 19px 0;
+
+        @media (min-width: 620px) {
+            & {
+                @include raleway(52, 1.2, 800);
+            }
+        }
     }
     &__text {
         @include montserrat(16, 24px, 300);
@@ -360,12 +396,24 @@
         margin: 0 auto;
     }
     &__sub-title {
-        @include raleway(36, 1.2, 500);
+        @include raleway(24, 1.2, 500);
         margin: 0 0 14px 0;
+
+        @media (min-width: 620px) {
+            & {
+                @include raleway(36, 1.2, 500);
+            }
+        }
     }
     &__title {
-        @include raleway(52, 1.2, 800);
+        @include raleway(36, 1.2, 800);
         margin: 0 0 19px 0;
+
+        @media (min-width: 620px) {
+            & {
+                @include raleway(52, 1.2, 800);
+            }
+        }
     }
     &__text {
         @include montserrat(16, 24px, 300);
@@ -462,12 +510,24 @@
         margin: 0 auto;
     }
     &__sub-title {
-        @include raleway(36, 1.2, 500);
+        @include raleway(24, 1.2, 500);
         margin: 0 0 14px 0;
+
+        @media (min-width: 620px) {
+            & {
+                @include raleway(36, 1.2, 500);
+            }
+        }
     }
     &__title {
-        @include raleway(52, 1.2, 800);
+        @include raleway(36, 1.2, 800);
         margin: 0 0 19px 0;
+
+        @media (min-width: 620px) {
+            & {
+                @include raleway(52, 1.2, 800);
+            }
+        }
     }
     &__text {
         @include montserrat(16, 24px, 300);
