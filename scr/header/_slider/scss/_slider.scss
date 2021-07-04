@@ -27,28 +27,21 @@
     margin: 0;
     transition: $trans;
 
-    /*&__left {
-        display: block;
-        margin-left: 10px;
-        width: 40px;
-        height: 40px;
-        border-top: 2px solid #ffffff;
-        border-left: 2px solid #ffffff;
-        opacity: 0.5;
-        transform: rotate(-45deg);
-        transition: $trans;
+    &__left {
+        display: none;
 
-        @media (min-width: $media998) {
-            &:hover {
-                border-top: 2px solid $hover-color;
-                border-left: 2px solid $hover-color;
+        @media (min-width: 760px) {
+            & {
+                display: block;
+                margin-left: 10px;
+                width: 40px;
+                height: 73px;
+                background: url("../img/left.png") 0 0 no-repeat;
+                cursor: pointer;
+                transition: $trans;
             }
         }
-        &:active {
-            border-top: 2px solid $active-color;
-            border-left: 2px solid $active-color;
-        }
-    }*/
+    }
 
     &__content {
         max-width: 600px;
@@ -92,27 +85,23 @@
         }
     }
 
-    /*&__right {
-        display: block;
-        margin-right: 10px;
-        width: 40px;
-        height: 40px;
-        border-top: 2px solid #ffffff;
-        border-right: 2px solid #ffffff;
-        opacity: 0.5;
-        transform: rotate(45deg);
+    &__right {
+        display: none;
 
-        @media (min-width: $media998) {
-            &:hover {
-                border-top: 2px solid $hover-color;
-                border-right: 2px solid $hover-color;
+        @media (min-width: 760px) {
+            & {
+                display: block;
+                margin-right: 20px;
+                width: 40px;
+                height: 73px;
+                background: url("../img/left.png") 0 0 no-repeat;
+                transform: rotate(180deg);
+                cursor: pointer;
+                transition: $trans;
             }
         }
-        &:active {
-            border-top: 2px solid $active-color;
-            border-right: 2px solid $active-color;
-        }
-    }*/
+    }
+
     &::after {
         content: "";
         position: absolute;
@@ -140,29 +129,6 @@
     transition: $trans;
     margin: 0 0 0 100%;
 
-    /*&__left {
-        display: block;
-        margin-left: 10px;
-        width: 40px;
-        height: 40px;
-        border-top: 2px solid #ffffff;
-        border-left: 2px solid #ffffff;
-        opacity: 0.5;
-        transform: rotate(-45deg);
-        transition: $trans;
-
-        @media (min-width: $media998) {
-            &:hover {
-                border-top: 2px solid $hover-color;
-                border-left: 2px solid $hover-color;
-            }
-        }
-        &:active {
-            border-top: 2px solid $active-color;
-            border-left: 2px solid $active-color;
-        }
-    }*/
-
     &__content {
         max-width: 600px;
         margin: 0 auto;
@@ -204,28 +170,6 @@
             @include button-active;
         }
     }
-
-    /*&__right {
-        display: block;
-        margin-right: 10px;
-        width: 40px;
-        height: 40px;
-        border-top: 2px solid #ffffff;
-        border-right: 2px solid #ffffff;
-        opacity: 0.5;
-        transform: rotate(45deg);
-
-        @media (min-width: $media998) {
-            &:hover {
-                border-top: 2px solid $hover-color;
-                border-right: 2px solid $hover-color;
-            }
-        }
-        &:active {
-            border-top: 2px solid $active-color;
-            border-right: 2px solid $active-color;
-        }
-    }*/
 
     &::after {
         content: "";
@@ -254,29 +198,6 @@
     transition: $trans;
     margin: 0 0 0 100%;
 
-    /*&__left {
-        display: block;
-        margin-left: 10px;
-        width: 40px;
-        height: 40px;
-        border-top: 2px solid #ffffff;
-        border-left: 2px solid #ffffff;
-        opacity: 0.5;
-        transform: rotate(-45deg);
-        transition: $trans;
-
-        @media (min-width: $media998) {
-            &:hover {
-                border-top: 2px solid $hover-color;
-                border-left: 2px solid $hover-color;
-            }
-        }
-        &:active {
-            border-top: 2px solid $active-color;
-            border-left: 2px solid $active-color;
-        }
-    }*/
-
     &__content {
         max-width: 600px;
         margin: 0 auto;
@@ -318,28 +239,6 @@
             @include button-active;
         }
     }
-
-    /*&__right {
-        display: block;
-        margin-right: 10px;
-        width: 40px;
-        height: 40px;
-        border-top: 2px solid #ffffff;
-        border-right: 2px solid #ffffff;
-        opacity: 0.5;
-        transform: rotate(45deg);
-
-        @media (min-width: $media998) {
-            &:hover {
-                border-top: 2px solid $hover-color;
-                border-right: 2px solid $hover-color;
-            }
-        }
-        &:active {
-            border-top: 2px solid $active-color;
-            border-right: 2px solid $active-color;
-        }
-    }*/
 
     &::after {
         content: "";
@@ -368,29 +267,6 @@
     transition: $trans;
     margin: 0 0 0 100%;
 
-    /*&__left {
-        display: block;
-        margin-left: 10px;
-        width: 40px;
-        height: 40px;
-        border-top: 2px solid #ffffff;
-        border-left: 2px solid #ffffff;
-        opacity: 0.5;
-        transform: rotate(-45deg);
-        transition: $trans;
-
-        @media (min-width: $media998) {
-            &:hover {
-                border-top: 2px solid $hover-color;
-                border-left: 2px solid $hover-color;
-            }
-        }
-        &:active {
-            border-top: 2px solid $active-color;
-            border-left: 2px solid $active-color;
-        }
-    }*/
-
     &__content {
         max-width: 600px;
         margin: 0 auto;
@@ -432,28 +308,6 @@
             @include button-active;
         }
     }
-
-    /*&__right {
-        display: block;
-        margin-right: 10px;
-        width: 40px;
-        height: 40px;
-        border-top: 2px solid #ffffff;
-        border-right: 2px solid #ffffff;
-        opacity: 0.5;
-        transform: rotate(45deg);
-
-        @media (min-width: $media998) {
-            &:hover {
-                border-top: 2px solid $hover-color;
-                border-right: 2px solid $hover-color;
-            }
-        }
-        &:active {
-            border-top: 2px solid $active-color;
-            border-right: 2px solid $active-color;
-        }
-    }*/
 
     &::after {
         content: "";
@@ -482,29 +336,6 @@
     transition: $trans;
     margin: 0 0 0 100%;
 
-    /*&__left {
-        display: block;
-        margin-left: 10px;
-        width: 40px;
-        height: 40px;
-        border-top: 2px solid #ffffff;
-        border-left: 2px solid #ffffff;
-        opacity: 0.5;
-        transform: rotate(-45deg);
-        transition: $trans;
-
-        @media (min-width: $media998) {
-            &:hover {
-                border-top: 2px solid $hover-color;
-                border-left: 2px solid $hover-color;
-            }
-        }
-        &:active {
-            border-top: 2px solid $active-color;
-            border-left: 2px solid $active-color;
-        }
-    }*/
-
     &__content {
         max-width: 600px;
         margin: 0 auto;
@@ -546,28 +377,6 @@
             @include button-active;
         }
     }
-
-    /*&__right {
-        display: block;
-        margin-right: 10px;
-        width: 40px;
-        height: 40px;
-        border-top: 2px solid #ffffff;
-        border-right: 2px solid #ffffff;
-        opacity: 0.5;
-        transform: rotate(45deg);
-
-        @media (min-width: $media998) {
-            &:hover {
-                border-top: 2px solid $hover-color;
-                border-right: 2px solid $hover-color;
-            }
-        }
-        &:active {
-            border-top: 2px solid $active-color;
-            border-right: 2px solid $active-color;
-        }
-    }*/
 
     &::after {
         content: "";
